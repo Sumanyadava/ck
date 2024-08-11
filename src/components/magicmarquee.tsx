@@ -20,23 +20,12 @@ const reviews = [
   {
     body: " ● Tatva Networks ",
   },
-  
 ];
 
 const firstRow = reviews.slice(0, 3);
-const secondRow = reviews.slice(3 , 6);
+const secondRow = reviews.slice(3, 6);
 
-const ReviewCard = ({
-  img,
-  name,
-  username,
-  body,
-}: {
-  img: string;
-  name: string;
-  username: string;
-  body: string;
-}) => {
+const ReviewCard = ({ body }: { body: string }) => {
   return (
     <figure className={cn("")}>
       <blockquote className="mt-2 text-6xl">{body}</blockquote>
@@ -48,12 +37,12 @@ export function MarqueeDemo() {
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border  md:shadow-xl">
       <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review , index) => (
+        {firstRow.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}
       </Marquee>
       <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review,index) => (
+        {secondRow.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}
       </Marquee>
