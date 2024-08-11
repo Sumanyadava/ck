@@ -6,19 +6,31 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockDemo() {
   return (
-    <div className="sticky bottom-16">
-      <Dock magnification={60} distance={100}>
-        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Icons.gitHub className="size-full" />
+    <div className="sticky bottom-16 w-[100vw] z-20 text-black ">
+      <Dock magnification={60} distance={200}>
+        <DockIcon  className="bg-black/10 dark:bg-white/10 p-3">
+          <h3 className="">Works </h3>
+        </DockIcon>
+        <DockIcon className="w-1/6 bg-black/10 dark:bg-white/10 p-3">
+          <h3>Benifits</h3>
+        </DockIcon>
+        <DockIcon className="w-32 bg-black/10 dark:bg-white/10 p-3">
+          Services
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Icons.googleDrive className="size-full" />
+          <h3>B.I.O.B.</h3>
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Icons.notion className="size-full" />
+          <h3>Pricing</h3>
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Icons.whatsapp className="size-full" />
+          <h3>Resources</h3>
+        </DockIcon>
+        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
+          <h3>FAQs</h3>
+        </DockIcon>
+        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
+          <h3>Login</h3>
         </DockIcon>
       </Dock>
     </div>
