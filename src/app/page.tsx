@@ -81,7 +81,7 @@ export default function Home() {
               </div>
             </div>
 
-            <DockDemo />
+            {/* <DockDemo /> */}
             <Footer />
             {/* //commits nav scratch */}
           </motion.div>
