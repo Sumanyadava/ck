@@ -3,7 +3,7 @@ import React from "react";
 const WhyUs = () => {
   return (
     <div>
-    <div className="flex h-[50vh] w-full text-black justify-center items-center gap-5 sm:flex-col md:flex-row">
+    <div className="flex h-[50vh] w-full text-black justify-center items-center gap-5 sm:flex-col md:flex-row ml-16">
       <div className=" sm:w-1/3 ">
         <h1 className="text-black text-4xl font-bold">
           Focus and Scale your business, leave the HubSpot CRM to Us
@@ -23,7 +23,7 @@ const WhyUs = () => {
 
 
 
-    <div className=" w-full flex justify-around gap-5 items-center flex-wrap">
+    <div className=" w-full flex justify-around gap-5 items-center flex-wrap text-black font-bold">
             <div className="bg-[#FEDD26] p-5 rounded-xl">
               {" "}
               Outsource your CRM for best ROI{" "}
@@ -33,7 +33,7 @@ const WhyUs = () => {
             <div className="bg-[#FA421E] p-5 rounded-xl">
               Unlimited HubSpot tasks{" "}
             </div>
-            <div className="bg-[#FFF27E] p-5 rounded-xl">
+            <div className="bg-[#437bff] p-5 rounded-xl">
               {" "}
               Submit request by anyone in you team{" "}
             </div>

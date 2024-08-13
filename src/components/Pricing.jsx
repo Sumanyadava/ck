@@ -39,12 +39,12 @@ const Pricing = () => {
   const plan = plans[selectedPlan];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center p-8 bg-gray-100 h-screen w-[100%]">
+    <div className="flex flex-col md:flex-row justify-center items-center p-8 bg-gray-100 h-screen w-[100%] mt-10">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-black text-white p-8 rounded-lg shadow-lg mb-8 md:mb-0 md:mr-8 h-[70%] max-w-md "
+        className="bg-black text-white p-8 rounded-lg shadow-lg mb-8 md:mb-0 md:mr-8 h-[600px] max-w-md "
       >
         <div className="mb-6">
           <span className="bg-pink-500 text-xs font-semibold px-3 py-1 rounded-full">● Slots Availability: 6 as on 08/2024</span>
@@ -72,7 +72,7 @@ const Pricing = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="bg-white p-8 rounded-lg shadow-lg max-w-md text-black h-[70%] w-full"
+        className="bg-white p-8 rounded-lg shadow-lg max-w-md text-black h-[600px]  w-full "
       >
         <div className="flex mb-4 bg-gray-100 w-max p-1 rounded-full">
           <span 

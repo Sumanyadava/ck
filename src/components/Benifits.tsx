@@ -44,10 +44,12 @@ const Benifits = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="h-[80%] w-1/3 bg-pink-200 ">
+        <div className="h-[80%] w-1/3  ">
           <Image
-            src=""
-            alt=""
+            src="/10035045.jpg"
+            alt="img"
+            width={1000}
+            height={1000}
             className="h-full w-full bg-pink-500  rounded-xl"
           />
         </div>
