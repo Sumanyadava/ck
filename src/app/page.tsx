@@ -83,6 +83,7 @@ export default function Home() {
 
             <DockDemo />
             <Footer />
+            {/* //commits nav scratch */}
           </motion.div>
         )}
       </AnimatePresence>
