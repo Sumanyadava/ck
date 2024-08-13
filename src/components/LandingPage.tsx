@@ -9,7 +9,6 @@ import {
 } from "./ui/animated-modal";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { AnimatedModalDemo } from "./ani";
 
 const LandingPage = () => {
   const images = [
@@ -24,16 +23,16 @@ const LandingPage = () => {
     <div className="h-screen w-full bg-[#eff0f3] flex items-center">
       <video src="hero.v2.mp4" autoPlay loop muted className="absolute -z-0"></video>
 
-      <div className="h-full  flex justify-center items-start  flex-col w-1/2 text-black z-10 ">
+      <div className="h-full flex justify-center items-start flex-col w-1/2 text-black z-10">
         <h1 className="ml-5">Your Hubspot Partner</h1>
-        <h1 className="ml-5 text-2xl ">A Rev-ops agency with a twist</h1>
+        <h1 className="ml-5 text-2xl">A Rev-ops agency with a twist</h1>
 
         <p className="text-xl md:text-xl sm:text-2xl ml-5 w-2/3">
           We provide successful implementation strategy of software development
           solutions and innovative solutions for any challenges you face
         </p>
-        {/* //modals start  */}
 
+        {/* Modals Start */}
         <div className="m-5">
           <Modal>
             <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
@@ -83,7 +82,7 @@ const LandingPage = () => {
                   ))}
                 </div>
                 <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-                  <div className="flex  items-center justify-center">
+                  <div className="flex items-center justify-center">
                     <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                     <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                       5 connecting flights
@@ -101,7 +100,7 @@ const LandingPage = () => {
                       69 visiting spots
                     </span>
                   </div>
-                  <div className="flex  items-center justify-center">
+                  <div className="flex items-center justify-center">
                     <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                     <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                       Good food everyday
@@ -132,10 +131,9 @@ const LandingPage = () => {
             </ModalBody>
           </Modal>
         </div>
-
-        {/* //modals  */}
+        {/* Modals End */}
       </div>
-      <div className="h-full  w-1/2"></div>
+      <div className="h-full w-1/2"></div>
     </div>
   );
 };
@@ -159,7 +157,6 @@ const PlaneIcon = ({ className }: { className?: string }) => {
     </svg>
   );
 };
-
 const VacationIcon = ({ className }: { className?: string }) => {
   return (
     <svg
