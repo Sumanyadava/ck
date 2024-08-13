@@ -20,17 +20,17 @@ const FAQs = () => {
     {
       question: "Why wouldn’t I just hire a full-time HubSpot specialist?",
       answer:
-        "The annual cost of a full-time senior specialist exceeds $100,000, plus benefits (and hard luck in finding an expert). Aside from that, you may not always have enough work to keep them busy at all times, so you're stuck paying for time you aren't able to utilise. Apart from all these, if the specialist exits the company you will end up paying more to get a new hire and the transition of task or work wouldn’t go smoothly.<br/> That’s why we are here. No more hiring trouble, no more headaches to business owners, no more extra payout, no more inexperienced employees, no more employee exit issues. With the monthly plan, our pricing is minimum while you compare the payouts.",
+        "The annual cost of a full-time senior specialist exceeds $100,000, plus benefits (and hard luck in finding an expert). Aside from that, you may not always have enough work to keep them busy at all times, so youre stuck paying for time you arent able to utilise. Apart from all these, if the specialist exits the company you will end up paying more to get a new hire and the transition of task or work wouldnt go smoothly.<br/> That’s why we are here. No more hiring trouble, no more headaches to business owners, no more extra payout, no more inexperienced employees, no more employee exit issues. With the monthly plan, our pricing is minimum while you compare the payouts.",
     },
     {
       question: "Why shouldn’t I get a freelancer to manage HubSpot?",
       answer:
-        "The annual cost of a full-time senior specialist exceeds $100,000, plus benefits (and hard luck in finding an expert). Aside from that, you may not always have enough work to keep them busy at all times, so you're stuck paying for time you aren't able to utilise. Apart from all these, if the specialist exits the company you will end up paying more to get a new hire and the transition of task or work wouldn’t go smoothly.",
+        "The annual cost of a full-time senior specialist exceeds $100,000, plus benefits (and hard luck in finding an expert). Aside from that, you may not always have enough work to keep them busy at all times, so youre stuck paying for time you arent able to utilise. Apart from all these, if the specialist exits the company you will end up paying more to get a new hire and the transition of task or work wouldnt go smoothly.",
     },
     {
       question: "Is there a limit to how many requests I can have?",
       answer:
-        "Once subscribed, you’re able to add as many requests to your queue as you’d like and we will deliver them one by one. Not just this, we will suggest to you what best is required for your business to drive sales with optimising CRM.",
+        "Once subscribed, youre able to add as many requests to your queue as youd like and we will deliver them one by one. Not just this, we will suggest to you what best is required for your business to drive sales with optimising CRM.",
     },
     {
       question: "How soon will my changes be made?",
@@ -43,7 +43,7 @@ const FAQs = () => {
     },
     {
       question: "How do I request HubSpot updates/changes?",
-      answer: "Requests are submitted through a shared Trello board. You can add any additional context on the Trello card for that request (videos, text, screenshots, etc.). If additional details are required, we will comment directly on the card to ensure we're completely aligned before making any updates or changes. We are on Slack too, and you can speak with us on a call for any urgent or complex setup. However, all requests must be added to Trello to ensure smooth deliverability.",
+      answer: "Requests are submitted through a shared Trello board. You can add any additional context on the Trello card for that request (videos, text, screenshots, etc.). If additional details are required, we will comment directly on the card to ensure were completely aligned before making any updates or changes. We are on Slack too, and you can speak with us on a call for any urgent or complex setup. However, all requests must be added to Trello to ensure smooth deliverability.",
     },
     {
       question: "Is just the subscriber asking for requests? Do hubCentral provide recommendations?",
@@ -66,7 +66,7 @@ const FAQs = () => {
       answer: "Billing is done on a 31-day cycle. Once you start your subscription with payment, our work with you will begin on either the 1st or 15th.",
     },
     {
-      question: "Are there any refunds if I don’t like the service?",
+      question: "Are there any refunds if I dont like the service?",
       answer: "Due to the high-quality nature of the work, there will be no refunds issued.",
     },
     {
