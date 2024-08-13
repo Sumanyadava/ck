@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
+import Image from "next/image";
 
 const Benifits = () => {
   const reviews = [
@@ -38,14 +39,13 @@ const Benifits = () => {
             height="100%"
             src="https://www.youtube.com/embed/c3L0fbtftRY?si=Z0_d98vGNbnYIaBK"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
         <div className="h-[80%] w-1/3 bg-pink-200 ">
-          <img
+          <Image
             src=""
             alt=""
             className="h-full w-full bg-pink-500  rounded-xl"

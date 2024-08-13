@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const Pageasd = () => {
+const page = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,11 +18,15 @@ const Pageasd = () => {
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -41,10 +45,12 @@ const Pageasd = () => {
         transition={{ delay: 0.2, duration: 0.5 }}
         className="text-6xl font-bold mb-6 text-gray-800"
       >
-        Connect with Us <br />and transform in no time
+        Connect with Us <br />
+        and transform in no time
       </motion.h1>
       <p className="mb-6">
-        Book a time with us to learn how we can add value back to your business with our capabilities.
+        Book a time with us to learn how we can add value back to your business
+        with our capabilities.
       </p>
       <form onSubmit={handleSubmit}>
         <AnimatePresence>
@@ -53,10 +59,11 @@ const Pageasd = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            Hi I am 
+            Hi, I am
             <input
               type="text"
               name="name"
+              aria-label="Name"
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
@@ -68,10 +75,11 @@ const Pageasd = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            Reach me at 
+            Reach me at
             <input
               type="email"
               name="email"
+              aria-label="Email"
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
@@ -86,6 +94,7 @@ const Pageasd = () => {
             Country
             <select
               name="country"
+              aria-label="Country"
               value={formData.country}
               onChange={handleChange}
               className="w-full p-2 mb-4 border-b-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -106,6 +115,7 @@ const Pageasd = () => {
             <input
               type="text"
               name="mobile"
+              aria-label="Mobile number"
               placeholder="Mobile number"
               value={formData.mobile}
               onChange={handleChange}
@@ -121,6 +131,7 @@ const Pageasd = () => {
             <input
               type="text"
               name="companyName"
+              aria-label="Company name"
               placeholder="Company name"
               value={formData.companyName}
               onChange={handleChange}
@@ -136,6 +147,7 @@ const Pageasd = () => {
             <input
               type="text"
               name="companyWebsite"
+              aria-label="Company website"
               placeholder="Company website"
               value={formData.companyWebsite}
               onChange={handleChange}
@@ -150,6 +162,7 @@ const Pageasd = () => {
             Type of query:
             <select
               name="queryType"
+              aria-label="Type of query"
               value={formData.queryType}
               onChange={handleChange}
               className="w-full p-2 mb-4 border-b-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -167,6 +180,7 @@ const Pageasd = () => {
             Preferred Plan:
             <select
               name="preferredPlan"
+              aria-label="Preferred Plan"
               value={formData.preferredPlan}
               onChange={handleChange}
               className="w-full p-2 mb-4 border-b-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -184,11 +198,12 @@ const Pageasd = () => {
             Any further information for us:
             <textarea
               name="additionalInfo"
+              aria-label="Additional information"
               placeholder="Additional information"
               value={formData.additionalInfo}
               onChange={handleChange}
               className="w-full p-2 mb-4 border-b-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              rows="3"
+              rows={3}
             ></textarea>
           </motion.div>
         </AnimatePresence>
@@ -205,4 +220,4 @@ const Pageasd = () => {
   );
 };
 
-export default Pageasd;
+export default page;
