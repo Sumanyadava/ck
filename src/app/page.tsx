@@ -47,27 +47,38 @@ export default function Home() {
             <div className="overflow-hidden">
               <MarqueeDemo />
             </div>
+            <CardHoverEffectDemo />
+
             <WhyUs />
             {/* <Works /> */}
             <Benifits />
             {/* <FollowingPointerDemo /> */}
             {/* <AnimatedPinDemo /> */}
 
-            <CardHoverEffectDemo />
 
             <Pricing />
             <div className="flex justify-around items-center w-full bg-white flex-wrap ">
               <FAQs />
               <div className="h-[60vh] bg-purple-600 rounded-lg w-[44vh] flex flex-col justify-around items-center">
-                <img src="acs" alt="asc" className="rounded-full h-60 w-60 bg-pink-200" />
-                <h1 className="text-5xl text-center font-bold">Book a 15-minute intro call</h1>
-                <button className="p-2 bg-black rounded-sm ">Schedule now</button>
+                <img
+                  src="acs"
+                  alt="asc"
+                  className="rounded-full h-60 w-60 bg-pink-200"
+                />
+                <h1 className="text-5xl text-center font-bold">
+                  Book a 15-minute intro call
+                </h1>
+                <button className="p-2 bg-black rounded-sm ">
+                  Schedule now
+                </button>
                 <p>
                   Prefer to email?
-                  <a href="#" className="text-green-400"> hello@hubcentral.co</a>
+                  <a href="#" className="text-green-400">
+                    {" "}
+                    hello@hubcentral.co
+                  </a>
                 </p>
               </div>
-
             </div>
 
             <DockDemo />
