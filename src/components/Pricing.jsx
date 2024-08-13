@@ -100,7 +100,7 @@ const Pricing = () => {
           <span className="text-lg font-normal">/m</span>
         </h3>
         <p className="text-gray-600 mb-6">{plan.description}</p>
-        <h4 className="font-semibold mb-2">What's included:</h4>
+        <h4 className="font-semibold mb-2">What included:</h4>
         <ul className="list-disc list-inside mb-6 text-sm">
           {plan.features.map((feature, index) => (
             <li key={index}>{feature}</li>
